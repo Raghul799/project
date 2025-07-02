@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { FaShoppingCart } from "react-icons/fa";
-import { auth, db } from "../components/firebase";
+import { auth, db } from "../services/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,

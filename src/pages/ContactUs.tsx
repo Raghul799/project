@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import { db } from "../components/firebase";
+import { db } from "../services/firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 const ContactUs = () => {

@@ -1,6 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react";
+// src/context/UserContext.tsx
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth, db } from "../components/firebase";
+import { auth, db } from "../services/firebase"; // ✅ Corrected path
 import { doc, getDoc } from "firebase/firestore";
 
 interface UserData {
